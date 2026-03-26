@@ -182,7 +182,7 @@ const LandingPage = () => {
               <div
                 key={index}
                 className="relative overflow-hidden p-8 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-white/20 transition-all duration-300 group"
-                data-testid={`mode-card-${mode.name.toLowerCase()}`}
+                data-testid={`mode-card-${mode.name.toLowerCase().replace(/\s+/g, "-")}`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${mode.color} opacity-0 group-hover:opacity-5 transition-opacity`} />
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${mode.color} flex items-center justify-center mb-6`}>
